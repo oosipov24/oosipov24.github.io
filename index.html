@@ -2,58 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-
-  <title>Olgerts Osipovs | Systems Builder</title>
-  <style>
-    body {
-      background: #0f0f0f;
-      color: white;
-      font-family: Arial, sans-serif;
-      padding: 80px;
-    }
-    h1 {
-      font-size: 48px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olgerts Osipovs - Systems Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div>
-        <h1>Olgerts Osipovs Portfolio</h1>
-        <p>Skills: N8N | WordPress | Laravel | Docker | Systems Architecture | Databases | Fullstack, Frontend, Backend Developer |</p>
-        <p>Programming Languages: PHP, SQL, HTML, CSS, JS, Python, C++</p>
-        <p>Languages: English, Russian, Latvian</p>
+
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__eyebrow">
+      <span class="dot"></span>
+      <span>Available for work</span>
     </div>
-    <div>
-        Projects:
-        <div>
-            <p>WordPress projects:</p>
-            <p>Have participated in these project as a developer and editor.</p>
-            <ul>
-                <li>
-                    <a href="https://ordigital.r-s.space/">Portfolio website</a>
-                </li>
-                <li>
-                    <a href="https://performagen.r-s.space/">Portfolio website</a>
-                </li>
-                <li>
-                    <a href="https://esimster.com/">Online eSIM market</a>
-                </li>
-                <li>
-                    <a href="https://swansim.net/">Online eSIM market n2</a>
-                </li>
-                <li>
-                    <a href="https://nutriwellnesscentral.com/">Online market</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p>Laravel project:</p>
-            <ul>
-                <li><a href="">Online catalogue</a></li>
-                <li>Online Collaborative Web Application</li>
-            </ul>
-        </div>
+    <h1 class="hero__name">
+      <span class="hero__first">Olgerts</span>
+      <span class="hero__last">Osipovs</span>
+    </h1>
+    <p class="hero__title">Systems Builder <span class="divider">/</span> Fullstack Developer</p>
+    <div class="hero__langs">
+      <span>EN</span><span>RU</span><span>LV</span>
     </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="about__block">
+      <h2 class="section-label">Stack</h2>
+      <div class="tags">
+        <span>N8N</span><span>WordPress</span><span>Laravel</span>
+        <span>Docker</span><span>Systems Architecture</span><span>Databases</span>
+        <span>Frontend</span><span>Backend</span>
+      </div>
+    </div>
+    <div class="about__block">
+      <h2 class="section-label">Languages</h2>
+      <div class="tags">
+        <span>PHP</span><span>SQL</span><span>HTML</span>
+        <span>CSS</span><span>JavaScript</span><span>Python</span><span>C++</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience">
+    <h2 class="section-label">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Mar 2025 — Feb 2026</span>
+          <span class="timeline__tag">Freelance</span>
+        </div>
+        <div class="timeline__body">
+          <h3 class="timeline__role">Frontend Developer <span class="timeline__co">— WordPress</span></h3>
+          <p class="timeline__desc">Maintained and customised WordPress sites for clients. Adapted templates, ensured cross-device responsiveness, and handled full deployment workflows.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Feb 2025 — Sep 2025</span>
+          <span class="timeline__tag">Freelance</span>
+        </div>
+        <div class="timeline__body">
+          <h3 class="timeline__role">Frontend Developer <span class="timeline__co">— Multi-project</span></h3>
+          <p class="timeline__desc">Built responsive UIs from Figma designs using HTML, Tailwind CSS, and JavaScript. Delivered pixel-perfect, cross-device layouts for multiple clients.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Jun 2024 — Sep 2025</span>
+          <span class="timeline__tag">Full-time</span>
+        </div>
+        <div class="timeline__body">
+          <h3 class="timeline__role">Fullstack Developer <span class="timeline__co">— LifeAlbum</span></h3>
+          <p class="timeline__desc">Built a collaborative content platform from the ground up: auth system, RBAC (admin / contributor / viewer), QR code generation, admin panel, and multi-user editing. Stack: Laravel, MySQL, Blade, REST.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2 class="section-label">Projects</h2>
+
+    <div class="project-group">
+      <div class="project-group__header">
+        <span class="project-group__num">01</span>
+        <h3>WordPress</h3>
+      </div>
+      <ul class="project-list">
+        <li>
+          <a href="https://ordigital.r-s.space/" target="_blank" rel="noopener">
+            <span class="proj-name">Portfolio Website</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://performagen.r-s.space/" target="_blank" rel="noopener">
+            <span class="proj-name">Portfolio Website II</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://esimster.com/" target="_blank" rel="noopener">
+            <span class="proj-name">eSIMster — Online eSIM Market</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://swansim.net/" target="_blank" rel="noopener">
+            <span class="proj-name">SwanSim — eSIM Market</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://nutriwellnesscentral.com/" target="_blank" rel="noopener">
+            <span class="proj-name">NutriWellness Central</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="project-group">
+      <div class="project-group__header">
+        <span class="project-group__num">02</span>
+        <h3>Laravel</h3>
+      </div>
+      <ul class="project-list">
+        <li>
+          <a href="https://bespokeacornunits.com/" target="_blank" rel="noopener">
+            <span class="proj-name">Bespoke Acorn — Online Catalogue</span>
+            <span class="proj-arrow">↗</span>
+          </a>
+        </li>
+        <li class="no-link">
+          <span class="proj-name">Online Collaborative Web Application</span>
+          <span class="proj-tag">Private</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2 class="section-label">Contact</h2>
+    <p class="contact__line">Open to freelance projects and full-time roles. Let's build something together.</p>
+    <div class="contact__links">
+      <a href="mailto:olgertosipov@gmail.com" class="contact__item">
+        <span class="contact__icon">✉</span>
+        <span>olgertosipov@gmail.com</span>
+        <span class="proj-arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/oļģerts-osipovs-2555a3235/" target="_blank" rel="noopener" class="contact__item">
+        <span class="contact__icon">in</span>
+        <span>LinkedIn</span>
+        <span class="proj-arrow">↗</span>
+      </a>
+      <a href="tel:+37126799552" class="contact__item">
+        <span class="contact__icon">✆</span>
+        <span>+371 267 995 52</span>
+        <span class="proj-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Olgerts Osipovs</span>
+    <span class="footer__center">BSc Computer Science — Latvian University</span>
+    <span class="footer__mono">Systems Builder</span>
+  </footer>
+
 </body>
 </html>
